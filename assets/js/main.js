@@ -16,7 +16,7 @@ menuButton.addEventListener('click', () => {
 navigation.addEventListener('click', event => { if (event.target.closest('a')) closeMenu(); });
 document.addEventListener('click', event => { if (!event.target.closest('.site-header')) closeMenu(); });
 document.addEventListener('keydown', event => { if (event.key === 'Escape') { const open = menuButton.getAttribute('aria-expanded') === 'true'; closeMenu(); if (open) menuButton.focus(); } });
-window.matchMedia('(min-width: 851px)').addEventListener('change', closeMenu);
+window.matchMedia('(min-width: 901px)').addEventListener('change', closeMenu);
 const header = document.querySelector('.site-header');
 window.addEventListener('scroll', () => header.classList.toggle('scrolled', window.scrollY > 20), { passive: true });
 const filters = [...document.querySelectorAll('[data-filter]')];
@@ -70,3 +70,9 @@ dialog.addEventListener('click', event => { if (event.target === dialog) { const
 dialog.addEventListener('close', () => { document.body.classList.remove('modal-open'); if (lastTrigger) lastTrigger.focus(); });
 const aboutDetails = document.querySelector('#about-details');
 document.querySelector('a[href="#about-details"]').addEventListener('click', () => { aboutDetails.open = true; });
+
+// Keep one service open across browsers, including those without details[name].
+const serviceAccordions = [...document.querySelectorAll('.service-accordion')];
+serviceAccordions.forEach(item => item.addEventListener('toggle', () => {
+  if (item.open) serviceAccordions.forEach(other => { if (other !== item) other.open = false; });
+}));
