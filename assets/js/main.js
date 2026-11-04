@@ -71,8 +71,25 @@ dialog.addEventListener('close', () => { document.body.classList.remove('modal-o
 const aboutDetails = document.querySelector('#about-details');
 document.querySelector('a[href="#about-details"]').addEventListener('click', () => { aboutDetails.open = true; });
 
-// Keep one service open across browsers, including those without details[name].
-const serviceAccordions = [...document.querySelectorAll('.service-accordion')];
-serviceAccordions.forEach(item => item.addEventListener('toggle', () => {
-  if (item.open) serviceAccordions.forEach(other => { if (other !== item) other.open = false; });
-}));
+// Service tabs: keyboard and touch interaction with a matching content panel.
+const serviceTabs = [...document.querySelectorAll('[role="tab"]')];
+function activateService(tab, moveFocus = false) {
+  serviceTabs.forEach(item => {
+    const selected = item === tab;
+    item.setAttribute('aria-selected', String(selected));
+    item.tabIndex = selected ? 0 : -1;
+    document.getElementById(item.getAttribute('aria-controls')).hidden = !selected;
+  });
+  if (moveFocus) tab.focus();
+}
+serviceTabs.forEach((tab, index) => {
+  tab.addEventListener('click', () => activateService(tab));
+  tab.addEventListener('keydown', event => {
+    let next;
+    if (event.key === 'ArrowDown' || event.key === 'ArrowLeft') next = (index + 1) % serviceTabs.length;
+    if (event.key === 'ArrowUp' || event.key === 'ArrowRight') next = (index - 1 + serviceTabs.length) % serviceTabs.length;
+    if (event.key === 'Home') next = 0;
+    if (event.key === 'End') next = serviceTabs.length - 1;
+    if (next !== undefined) { event.preventDefault(); activateService(serviceTabs[next], true); }
+  });
+});
