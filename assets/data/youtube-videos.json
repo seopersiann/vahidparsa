@@ -1,0 +1,31 @@
+{
+  "channelUrl": "https://www.youtube.com/@vahid-parsa",
+  "verifiedAt": "2026-11-04",
+  "publishedVideoCount": 49,
+  "videos": [
+    {
+      "id": "Qijzq9Za_Lk",
+      "title": "آموزش ساخت سایت با هوش مصنوعی از صفر تا صد! 🤯 (بدون حتی یک خط کدنویسی)",
+      "thumbnail": "https://i.ytimg.com/vi/Qijzq9Za_Lk/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLAgkhv5qzTOZ7TICWKPg4vJucIIYQ",
+      "duration": "26:06",
+      "url": "https://www.youtube.com/watch?v=Qijzq9Za_Lk",
+      "image": "assets/images/youtube/Qijzq9Za_Lk.jpg"
+    },
+    {
+      "id": "FzchrelMbas",
+      "title": "آموزش کامل هوش مصنوعی کلاد (Claude AI) | هر چیزی که برای شروع کار با کلاد باید بدونی!",
+      "thumbnail": "https://i.ytimg.com/vi/FzchrelMbas/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLACst5mOCw0B7sjpZbwrZJzaMFOHw",
+      "duration": "41:53",
+      "url": "https://www.youtube.com/watch?v=FzchrelMbas",
+      "image": "assets/images/youtube/FzchrelMbas.jpg"
+    },
+    {
+      "id": "32Nvnd5q3js",
+      "title": "ساخت پاورپوینت با هوش مصنوعی در چند دقیقه! آموزش Gamma",
+      "thumbnail": "https://i.ytimg.com/vi/32Nvnd5q3js/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLAYD5Gef2sxlpQipjwzWgGrpmN6mw",
+      "duration": "8:47",
+      "url": "https://www.youtube.com/watch?v=32Nvnd5q3js",
+      "image": "assets/images/youtube/32Nvnd5q3js.jpg"
+    }
+  ]
+}
