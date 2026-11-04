@@ -65,11 +65,11 @@ document.querySelectorAll('[data-lesson]').forEach(button => button.addEventList
     document.body.classList.add('modal-open');
   }
 }));
-document.querySelector('.dialog-close').addEventListener('click', () => dialog.close());
-dialog.addEventListener('click', event => { if (event.target === dialog) { const box = dialog.getBoundingClientRect(); if (event.clientX < box.left || event.clientX > box.right || event.clientY < box.top || event.clientY > box.bottom) dialog.close(); } });
-dialog.addEventListener('close', () => { document.body.classList.remove('modal-open'); if (lastTrigger) lastTrigger.focus(); });
+document.querySelector('.dialog-close')?.addEventListener('click', () => dialog.close());
+dialog?.addEventListener('click', event => { if (event.target === dialog) { const box = dialog.getBoundingClientRect(); if (event.clientX < box.left || event.clientX > box.right || event.clientY < box.top || event.clientY > box.bottom) dialog.close(); } });
+dialog?.addEventListener('close', () => { document.body.classList.remove('modal-open'); if (lastTrigger) lastTrigger.focus(); });
 const aboutDetails = document.querySelector('#about-details');
-document.querySelector('a[href="#about-details"]').addEventListener('click', () => { aboutDetails.open = true; });
+document.querySelector('a[href="#about-details"]')?.addEventListener('click', () => { aboutDetails.open = true; });
 
 // Service tabs: keyboard and touch interaction with a matching content panel.
 const serviceTabs = [...document.querySelectorAll('[role="tab"]')];
@@ -93,3 +93,78 @@ serviceTabs.forEach((tab, index) => {
     if (next !== undefined) { event.preventDefault(); activateService(serviceTabs[next], true); }
   });
 });
+
+// Static article archive: category and text search work together.
+const journalCards = [...document.querySelectorAll('[data-journal-search]')];
+const journalFilters = [...document.querySelectorAll('[data-journal-filter]')];
+const journalSearch = document.querySelector('#journal-search');
+let journalCategory = 'all';
+function normalizePersian(value) {
+  return value.normalize('NFKC').replace(/ي/g, 'ی').replace(/ك/g, 'ک').replace(/[\u064B-\u065F\u0670]/g, '').replace(/\u200c/g, ' ').trim().toLocaleLowerCase('fa');
+}
+function updateJournal() {
+  if (!journalSearch) return;
+  const query = normalizePersian(journalSearch.value);
+  let visible = 0;
+  journalCards.forEach(card => {
+    card.hidden = (journalCategory !== 'all' && card.dataset.journalCategory !== journalCategory) || !normalizePersian(card.dataset.journalSearch).includes(query);
+    if (!card.hidden) visible++;
+  });
+  journalFilters.forEach(button => {
+    const active = button.dataset.journalFilter === journalCategory;
+    button.classList.toggle('active', active);
+    button.setAttribute('aria-pressed', String(active));
+  });
+  document.querySelector('#journal-empty').hidden = visible > 0;
+  document.querySelector('#journal-status').textContent = `${visible.toLocaleString('fa-IR')} مقاله نمایش داده شد.`;
+}
+journalFilters.forEach(button => button.addEventListener('click', () => { journalCategory = button.dataset.journalFilter; updateJournal(); }));
+journalSearch?.addEventListener('input', updateJournal);
+document.querySelector('#journal-reset')?.addEventListener('click', () => {
+  journalCategory = 'all'; journalSearch.value = ''; updateJournal(); journalSearch.focus();
+});
+
+// Prepare a message locally. Nothing is sent or stored by the form.
+const contactForm = document.querySelector('#contact-form');
+contactForm?.addEventListener('submit', event => {
+  event.preventDefault();
+  const name = contactForm.elements.name;
+  const message = contactForm.elements.message;
+  name.setCustomValidity(name.value.trim() ? '' : 'لطفاً نامت را بنویس.');
+  message.setCustomValidity(message.value.trim().length >= 10 ? '' : 'لطفاً پیامت را کمی بیشتر توضیح بده؛ دست‌کم ۱۰ نویسه.');
+  if (!contactForm.reportValidity()) return;
+  const reply = contactForm.elements.reply.value.trim();
+  const parts = ['سلام وحید،', `من ${name.value.trim()} هستم.`, `موضوع: ${contactForm.elements.topic.value}`, '', message.value.trim()];
+  if (reply) parts.push('', `راه پاسخ‌گویی: ${reply}`);
+  document.querySelector('#prepared-message').value = parts.join('\n');
+  document.querySelector('#contact-copy-status').textContent = '';
+  document.querySelector('#contact-result').hidden = false;
+  document.querySelector('#contact-result-title').focus();
+});
+contactForm?.addEventListener('input', event => { event.target.setCustomValidity?.(''); });
+document.querySelector('#copy-contact-message')?.addEventListener('click', async () => {
+  const field = document.querySelector('#prepared-message');
+  const status = document.querySelector('#contact-copy-status');
+  try {
+    await navigator.clipboard.writeText(field.value);
+    status.textContent = 'متن کپی شد. حالا آن را در راه ارتباطی دلخواهت ارسال کن.';
+  } catch {
+    field.focus(); field.select(); field.setSelectionRange(0, field.value.length);
+    status.textContent = 'متن انتخاب شد؛ آن را با گزینه کپی دستگاهت کپی کن و در راه ارتباطی دلخواه بفرست.';
+  }
+});
+document.querySelector('[data-copy-article]')?.addEventListener('click', async event => {
+  const status = document.querySelector('.copy-article-status');
+  const copyButton = event.currentTarget;
+  try {
+    await navigator.clipboard.writeText(window.location.href.split('#')[0]);
+    status.textContent = 'پیوند مقاله کپی شد.';
+    copyButton.textContent = 'پیوند کپی شد ✓';
+  } catch {
+    status.textContent = 'برای اشتراک‌گذاری، نشانی این صفحه را از نوار مرورگر کپی کن.';
+  }
+});
+
+// Enable preparation only after the local submit handler is ready.
+const prepareContactButton = document.querySelector('#prepare-contact-message');
+if (prepareContactButton) prepareContactButton.disabled = false;
