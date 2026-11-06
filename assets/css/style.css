@@ -190,3 +190,21 @@ body .site-shell .policy-date{font-size:14px;color:#a7b69a;margin-top:20px}
 .journal-single{row-gap:28px}
 @media(max-width:700px){.coding-prompt{padding:20px}.coding-guide .article-toc nav{grid-template-columns:1fr 1fr}.coding-guide .article-toc nav a{overflow-wrap:anywhere}}
 @media(min-width:901px){.coding-guide .article-toc{max-height:calc(100dvh - 150px);overflow-y:auto;scrollbar-width:thin}}
+
+/* Approved VP monogram: one vector geometry across identity and visual motifs. */
+.brand-mark{display:inline-block;width:1em;height:.58em;flex:none;vertical-align:middle;overflow:visible}
+.brand-symbol{display:inline-flex;align-items:center;justify-content:center;line-height:1;color:var(--green)}
+.brand .brand-mark{display:block;width:42px;height:auto;aspect-ratio:865/501;color:var(--green)}
+.site-footer .brand .brand-mark{width:50px;color:#263d17}
+.hero-asterisk .brand-mark{width:88px;height:51px}
+.experience-stars .brand-mark{width:54px;height:32px;letter-spacing:0}
+.little-spark .brand-mark{width:31px;height:18px}
+.photo-doodle .brand-mark{width:53px;height:31px}
+.editorial-spark .brand-mark{width:53px;height:31px}
+.manifesto i .brand-mark{width:34px;height:20px}
+.youtube-star .brand-mark{width:76px;height:44px}
+.community-experience-mark .brand-mark{width:60px;height:35px}
+.cta-art>span .brand-mark{width:150px;height:87px}
+.about-portrait-star .brand-mark{width:95px;height:55px}
+.about-perspective>span .brand-mark{width:100px;height:58px}
+@media(max-width:620px){.brand .brand-mark{width:35px}.site-footer .brand .brand-mark{width:43px}.hero-asterisk .brand-mark{width:58px;height:34px}.photo-doodle .brand-mark{width:42px;height:25px}.youtube-star .brand-mark{width:53px;height:31px}.cta-art>span .brand-mark{width:96px;height:56px}.about-portrait-star .brand-mark{width:64px;height:37px}.about-perspective>span .brand-mark{width:65px;height:38px}}
