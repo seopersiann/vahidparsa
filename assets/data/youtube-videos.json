@@ -9,7 +9,7 @@
       "thumbnail": "https://i.ytimg.com/vi/Qijzq9Za_Lk/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLAgkhv5qzTOZ7TICWKPg4vJucIIYQ",
       "duration": "26:06",
       "url": "https://www.youtube.com/watch?v=Qijzq9Za_Lk",
-      "image": "assets/images/youtube/Qijzq9Za_Lk.jpg"
+      "image": "assets/images/youtube/Qijzq9Za_Lk.webp"
     },
     {
       "id": "FzchrelMbas",
@@ -17,7 +17,7 @@
       "thumbnail": "https://i.ytimg.com/vi/FzchrelMbas/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLACst5mOCw0B7sjpZbwrZJzaMFOHw",
       "duration": "41:53",
       "url": "https://www.youtube.com/watch?v=FzchrelMbas",
-      "image": "assets/images/youtube/FzchrelMbas.jpg"
+      "image": "assets/images/youtube/FzchrelMbas.webp"
     },
     {
       "id": "32Nvnd5q3js",
@@ -25,7 +25,7 @@
       "thumbnail": "https://i.ytimg.com/vi/32Nvnd5q3js/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLAYD5Gef2sxlpQipjwzWgGrpmN6mw",
       "duration": "8:47",
       "url": "https://www.youtube.com/watch?v=32Nvnd5q3js",
-      "image": "assets/images/youtube/32Nvnd5q3js.jpg"
+      "image": "assets/images/youtube/32Nvnd5q3js.webp"
     }
   ]
 }
