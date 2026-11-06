@@ -157,3 +157,28 @@ body .site-shell .community-update{font-size:14px}
 .ai-guide .article-prose .article-exercise li::marker{color:#476b29}
 .ai-guide .article-prose .article-exercise a:not(.button){color:#274f10;text-decoration-color:#476b29}
 .ai-guide .article-prose .article-exercise .eyebrow{color:#476b29}
+
+/* Complete shared footer and plain-language policy pages. */
+.footer-top{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(260px,1fr);gap:55px;align-items:start}
+.footer-contact{padding:22px 24px;background:#284b0b0d;border:1px solid #47732740;border-radius:18px;min-width:0}
+.footer-contact h3{font-size:18px;color:#203b11;margin-bottom:16px}
+.footer-contact>a{display:flex;align-items:center;gap:13px;min-height:58px;padding:9px 0;color:#294a14}
+.footer-contact>a+a{border-top:1px solid #47732730}
+.footer-contact>a>span{display:grid;gap:2px;font-size:14px}
+.footer-contact bdi{font-size:16px;overflow-wrap:anywhere;direction:ltr;text-align:start}
+.footer-contact>a:hover{color:#0e2403}
+.footer-grid{grid-template-columns:1fr 1.3fr 1.1fr 1fr;gap:35px}
+.footer-grid nav>a{min-height:35px;padding-block:3px}
+.policy-intro{max-width:1160px}.policy-intro>p{max-width:760px}
+body .site-shell .policy-date{font-size:14px;color:#a7b69a;margin-top:20px}
+.policy-page{display:grid;grid-template-columns:minmax(0,760px) minmax(230px,1fr);gap:55px;align-items:start;margin-top:12px;margin-bottom:80px}
+.policy-prose{min-width:0}.policy-prose>section{margin-bottom:35px;scroll-margin-top:30px}
+.policy-prose h2{font-size:25px;line-height:1.9;margin-bottom:14px}
+.policy-prose p{margin-bottom:16px;color:#c0c7b8}
+.policy-prose a,.contact-privacy a{color:var(--green);text-decoration:underline;text-underline-offset:4px}
+.policy-contact{position:sticky;top:25px;background:#1c2715;border:1px solid #3c502c;border-radius:18px;padding:25px;min-width:0}
+.policy-contact h2{font-size:25px}.policy-contact p{margin-top:14px;margin-bottom:18px}
+.policy-contact>a{display:block;padding-block:9px;color:var(--green);overflow-wrap:anywhere;font-size:15px}
+.policy-contact .text-link{margin-top:12px}
+@media(max-width:1000px){.footer-top{gap:30px;grid-template-columns:minmax(0,1.2fr) minmax(260px,1fr)}.footer-grid{grid-template-columns:1fr 1fr;gap:30px}.policy-page{grid-template-columns:minmax(0,1fr) 260px;gap:30px}}
+@media(max-width:700px){.footer-top{grid-template-columns:1fr;gap:28px}.footer-contact{padding:20px}.footer-grid{gap:27px 20px}.footer-grid .footer-social-icons{grid-template-columns:repeat(2,44px)}.policy-page{grid-template-columns:1fr;gap:15px;margin-bottom:50px}.policy-contact{position:static}.policy-prose h2{font-size:23px}.policy-intro h1{font-size:32px}}
