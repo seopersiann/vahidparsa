@@ -75,3 +75,47 @@
 
 /* Social profile updates: a true mobile capture and the public LinkedIn profile card. */
 .telegram-support>.telegram-logo{width:30px;height:30px;padding:0}.about-mobile-figure{width:300px;max-width:100%;justify-self:center}.about-mobile-figure .about-site-shot{border-radius:27px;box-shadow:0 20px 60px #0006}.about-mobile-figure .about-site-shot img{aspect-ratio:375/812}.about-mobile-figure .about-browser-bar{padding:12px 10px}.about-mobile-figure .about-browser-bar bdi{font-size:8px}.about-mobile-figure figcaption{justify-content:center;text-align:center}.about-mobile-figure figcaption>span{display:none}#linkedin-story .about-site-shot img{aspect-ratio:794/468}@media(max-width:620px){.telegram-support>.telegram-logo{width:27px;height:27px}.about-mobile-figure{width:min(300px,90%)}.about-mobile-figure .about-site-shot{border-radius:23px}}
+
+/* Editorial guide: local channel screenshots and one featured article. */
+.ai-editorial-cover{position:relative;isolation:isolate;display:flex;align-items:center;justify-content:center;gap:38px;min-height:310px;padding:45px;background:radial-gradient(ellipse at 15% 100%,#46662b 0,transparent 60%),#182310;color:#edffe1;overflow:hidden;border:1px solid #35442b;border-radius:22px;margin:35px 0 0}
+.ai-editorial-cover strong{display:block;font-size:clamp(30px,4.5vw,57px);font-weight:850;line-height:1.55;letter-spacing:-1.3px;margin:9px 0}
+.ai-editorial-cover small,.ai-editorial-cover>div>span{color:#bad3a7;font-size:13px}
+.ai-cover-play{display:grid;place-items:center;flex:none;width:86px;height:86px;border-radius:26px;background:var(--green);color:#182310;font-size:32px;transform:rotate(-8deg)}
+.ai-cover-orbit{position:absolute;left:3%;bottom:-95px;font-size:300px;color:#a8f65a12;z-index:-1}
+.journal-single{grid-template-columns:1fr;max-width:none}
+.journal-featured{display:grid;grid-template-columns:1fr 1fr;align-items:stretch}
+.journal-featured>.journal-cover{height:auto;min-height:290px;padding:0;background:transparent}
+.journal-featured .ai-editorial-cover{height:100%;margin:0;border:0;border-radius:0;gap:25px;padding:30px;min-height:290px}
+.journal-featured .ai-editorial-cover strong{font-size:36px}
+.journal-featured .ai-cover-play{width:60px;height:60px;border-radius:18px;font-size:25px}
+.journal-featured .journal-card-body{display:flex;flex-direction:column;justify-content:center;padding:34px}
+.journal-featured h3{font-size:24px;line-height:1.9}
+.ai-guide .article-prose p,.ai-guide .article-prose li{font-size:16px;line-height:2.25;color:#c0c7b8}
+.ai-guide .article-prose p{margin-bottom:20px}
+.ai-guide .article-prose h2{font-size:27px;line-height:1.8;margin-bottom:22px}
+.ai-guide .article-prose h3{font-size:19px;line-height:1.9;margin:26px 0 12px;color:#eff6e9}
+.ai-guide .article-prose>section{margin-bottom:62px;scroll-margin-top:28px}
+.ai-guide .article-prose a:not(.button){color:var(--green);text-decoration:underline;text-decoration-color:#a8f65a55;text-underline-offset:5px}
+.ai-guide .article-prose a:hover{text-decoration-color:var(--green)}
+.ai-guide .article-prose strong{color:#f0f6e9}
+.ai-guide .article-prose ol{padding-inline-start:24px;margin-bottom:20px}
+.ai-guide .article-prose li{padding-inline-start:6px;margin-bottom:14px}
+.channel-number{display:block;color:var(--green);font-size:12px;letter-spacing:.4px;margin-bottom:13px}
+.channel-screenshot{margin:24px 0 30px}
+.channel-screenshot img{display:block;width:100%;height:auto;aspect-ratio:16/9;border:1px solid #34412a;border-radius:15px;background:#111}
+.channel-screenshot figcaption{font-size:11px;line-height:2;color:#8d9d80;margin-top:10px}
+.article-comparison{overflow:auto;max-width:100%;margin:28px 0;border:1px solid #34412a;border-radius:15px;background:#12190e}
+.article-comparison table{width:100%;min-width:550px;border-collapse:collapse;font-size:13px;line-height:2;text-align:right}
+.article-comparison caption{padding:18px;text-align:right;color:#e1efda;font-weight:700}
+.article-comparison th,.article-comparison td{padding:16px;border-top:1px solid #2c3823;vertical-align:top}
+.article-comparison thead{background:#233219;color:#d9efcb}
+.article-comparison tbody th{font-weight:550}
+.article-faq h3{padding-top:18px;border-top:1px solid #2c3823}
+@media(max-width:900px){.journal-featured .ai-editorial-cover{gap:18px;padding:24px}.journal-featured .ai-editorial-cover strong{font-size:30px}.journal-featured h3{font-size:21px}.journal-featured .journal-card-body{padding:25px}}
+@media(max-width:700px){.journal-featured{grid-template-columns:1fr}.journal-featured>.journal-cover{min-height:240px}.journal-featured .ai-editorial-cover{min-height:240px}.journal-featured .journal-card-body{padding:25px}.ai-editorial-cover{min-height:260px;gap:22px;padding:28px 20px}.ai-cover-play{width:62px;height:62px;font-size:26px;border-radius:20px}.ai-guide .article-prose p,.ai-guide .article-prose li{font-size:15px;line-height:2.2}.ai-guide .article-prose h2{font-size:23px}.ai-guide .article-prose>section{margin-bottom:45px}.ai-guide .article-header>p{font-size:14px}.ai-guide .article-header h1{font-size:28px}.channel-screenshot figcaption{font-size:10px}.ai-guide .article-toc nav{grid-template-columns:1fr 1fr;gap:12px}.ai-guide .article-toc nav a{font-size:11px}}
+@media(max-width:380px){.ai-guide .article-toc nav{grid-template-columns:1fr}.ai-editorial-cover{gap:16px}.ai-cover-play{width:48px;height:48px;font-size:21px}.ai-guide .article-header h1{font-size:25px}}
+.ai-guide .article-layout>*{min-width:0}
+.ai-guide .article-prose{width:100%;min-width:0}
+
+.journal-featured h2{font-size:24px;line-height:1.9;letter-spacing:-.5px;margin:12px 0}
+@media(max-width:900px){.journal-featured h2{font-size:21px}}

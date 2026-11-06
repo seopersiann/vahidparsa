@@ -1,0 +1,47 @@
+{
+  "capturedAt": "2026-11-06",
+  "method": "Real browser viewport screenshots of public YouTube channel video pages; WebP optimization with Pillow",
+  "channels": [
+    {
+      "name": "DeepLearning.AI",
+      "url": "https://www.youtube.com/@Deeplearningai",
+      "screenshot": "assets/images/articles/ai-youtube/deeplearningai.webp",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "name": "Andrej Karpathy",
+      "url": "https://www.youtube.com/@AndrejKarpathy",
+      "screenshot": "assets/images/articles/ai-youtube/karpathy.webp",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "name": "3Blue1Brown",
+      "url": "https://www.youtube.com/@3blue1brown",
+      "screenshot": "assets/images/articles/ai-youtube/3blue1brown.webp",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "name": "Two Minute Papers",
+      "url": "https://www.youtube.com/@TwoMinutePapers",
+      "screenshot": "assets/images/articles/ai-youtube/two-minute-papers.webp",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "name": "Matt Wolfe",
+      "url": "https://www.youtube.com/@mreflow",
+      "screenshot": "assets/images/articles/ai-youtube/matt-wolfe.webp",
+      "width": 1280,
+      "height": 720
+    }
+  ],
+  "references": [
+    "https://karpathy.ai/",
+    "https://www.3blue1brown.com/?topic=neural-networks",
+    "https://mattwolfe.com/",
+    "https://users.cg.tuwien.ac.at/zsolnai/gfx/two-minute-papers-awesome-research-for-everyone/"
+  ]
+}
