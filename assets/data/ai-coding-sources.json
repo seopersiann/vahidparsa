@@ -45,7 +45,18 @@
     }
   ],
   "featuredImage": {
-    "path": "assets/images/articles/ai-coding/featured.webp",
-    "type": "AI-generated editorial illustration, distinct from product screenshots."
+    "path": "assets/images/articles/ai-coding/best-ai-for-coding-cover.webp",
+    "type": "Editorial composite of real screenshots; no AI-generated artwork",
+    "description": "مقایسهٔ پنج ابزار هوش مصنوعی برای کدنویسی با اسکرین‌شات سایت‌های رسمی",
+    "width": 1280,
+    "height": 720,
+    "preferredPreview": "assets/images/articles/ai-coding/best-ai-for-coding-cover-social.jpg",
+    "sourceImages": [
+      "assets/images/articles/ai-coding/codex.webp",
+      "assets/images/articles/ai-coding/claude-code.webp",
+      "assets/images/articles/ai-coding/cursor.webp",
+      "assets/images/articles/ai-coding/copilot.webp",
+      "assets/images/articles/ai-coding/replit.webp"
+    ]
   }
 }
