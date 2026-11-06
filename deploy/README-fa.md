@@ -204,3 +204,7 @@ php deploy/tests/run.php
 - [دانلود آرشیو GitHub و نیاز به Contents: read برای توکن fine-grained](https://docs.github.com/en/rest/repos/contents#download-a-repository-archive-zip)
 - [ساخت و مدیریت Personal Access Token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)
 - [ویژگی‌های ورودی ZIP در PHP](https://www.php.net/manual/en/ziparchive.getexternalattributesindex.php)
+
+## نقشهٔ سایت و ایندکس
+
+در فهرست publish فایل خصوصی config.php، هر دو نام sitemap.xml و sitemap_index.xml باید مجاز باشند. نمونهٔ مخزن به‌روز شده است. پس از تغییر تنظیمات، PHP ناشر نیاز به جایگزینی ندارد. نقشه‌ها در GitHub با تغییر صفحات HTML ساخته و ثبت می‌شوند؛ Cron هاست نسخهٔ تازه را مانند بقیهٔ فایل‌های استاتیک منتشر می‌کند.

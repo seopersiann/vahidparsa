@@ -1,0 +1,44 @@
+name: Update XML sitemaps
+on:
+  push:
+    branches: [main]
+    paths:
+      - '**.html'
+      - 'scripts/generate_sitemaps.py'
+      - '.github/workflows/update-sitemaps.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: sitemap-main
+  cancel-in-progress: false
+jobs:
+  sitemap:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Generate and save sitemaps
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          for attempt in 1 2 3; do
+            git fetch origin main
+            git reset --hard origin/main
+            python3 scripts/generate_sitemaps.py
+            git add sitemap.xml sitemap_index.xml
+            if git diff --cached --quiet; then
+              echo 'Sitemaps are current.'
+              exit 0
+            fi
+            git commit -m 'Update XML sitemaps from published pages'
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+          done
+          echo 'Main changed repeatedly; sitemap update did not complete.' >&2
+          exit 1

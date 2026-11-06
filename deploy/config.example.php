@@ -10,7 +10,7 @@ return [
     'storage' => '/home/USERNAME/vahidparsa-deploy/data',
     'keep_backups' => 5,
     // Only these repository paths may be published. No PHP/backend execution.
-    'publish' => ['index.html', '404.html', 'robots.txt', 'sitemap.xml',
+    'publish' => ['index.html', '404.html', 'robots.txt', 'sitemap.xml', 'sitemap_index.xml',
                   'assets/', 'about/', 'articles/', 'contact/'],
     // Add any hosting-specific files/directories you want to preserve.
     'protect' => ['.htaccess', '.user.ini', '.well-known/', 'cgi-bin/',
