@@ -43,5 +43,10 @@
     "https://www.3blue1brown.com/?topic=neural-networks",
     "https://mattwolfe.com/",
     "https://users.cg.tuwien.ac.at/zsolnai/gfx/two-minute-papers-awesome-research-for-everyone/"
-  ]
+  ],
+  "featuredImage": {
+    "path": "assets/images/articles/ai-youtube/featured.webp",
+    "type": "AI-generated editorial illustration",
+    "description": "Abstract AI learning and video motif in the website black and lime palette; separate from the five real channel screenshots."
+  }
 }
