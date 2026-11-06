@@ -1,10 +1,12 @@
-name: Update XML sitemaps
+name: Update sitemaps and stylesheet versions
 on:
   push:
     branches: [main]
     paths:
       - '**.html'
       - 'scripts/generate_sitemaps.py'
+      - 'scripts/version_stylesheet.py'
+      - 'assets/css/style.css'
       - '.github/workflows/update-sitemaps.yml'
   workflow_dispatch:
 permissions:
@@ -29,16 +31,17 @@ jobs:
           for attempt in 1 2 3; do
             git fetch origin main
             git reset --hard origin/main
+            python3 scripts/version_stylesheet.py
             python3 scripts/generate_sitemaps.py
-            git add sitemap.xml sitemap_index.xml
+            git add -- sitemap.xml sitemap_index.xml '*.html'
             if git diff --cached --quiet; then
-              echo 'Sitemaps are current.'
+              echo 'Sitemaps and stylesheet versions are current.'
               exit 0
             fi
-            git commit -m 'Update XML sitemaps from published pages'
+            git commit -m 'Update sitemaps and stylesheet cache versions'
             if git push origin HEAD:main; then
               exit 0
             fi
           done
-          echo 'Main changed repeatedly; sitemap update did not complete.' >&2
+          echo 'Main changed repeatedly; generated page update did not complete.' >&2
           exit 1
