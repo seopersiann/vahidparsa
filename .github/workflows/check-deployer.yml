@@ -1,0 +1,22 @@
+name: Check private PHP deployer
+on:
+  push:
+    branches: [main]
+    paths: ['deploy/**', '.github/workflows/check-deployer.yml']
+  pull_request:
+    paths: ['deploy/**', '.github/workflows/check-deployer.yml']
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check PHP requirements
+        run: php -r 'if (PHP_VERSION_ID < 80100 || !extension_loaded("zip") || !extension_loaded("curl")) { exit(1); }'
+      - name: PHP syntax and isolated deployment tests
+        run: |
+          php -l deploy/Publisher.php
+          php -l deploy/deploy.php
+          php -l deploy/config.example.php
+          php deploy/tests/run.php

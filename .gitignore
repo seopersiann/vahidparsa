@@ -1,2 +1,4 @@
 .DS_Store
 .qa/
+deploy/config.php
+deploy/data/
