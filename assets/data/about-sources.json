@@ -1,0 +1,36 @@
+{
+  "capturedAt": "2026-11-06",
+  "note": "Real viewport screenshots captured from public pages. No social embeds or external image requests.",
+  "screenshots": [
+    {
+      "file": "assets/images/about/youtube.webp",
+      "source": "https://www.youtube.com/@vahid-parsa/videos",
+      "width": 1265,
+      "height": 712
+    },
+    {
+      "file": "assets/images/about/hoosh-parsi.webp",
+      "source": "https://hoosh-parsi.ir/",
+      "width": 1265,
+      "height": 712
+    },
+    {
+      "file": "assets/images/about/tablo-decor.webp",
+      "source": "https://tablo-decor.com/",
+      "width": 1265,
+      "height": 712
+    },
+    {
+      "file": "assets/images/about/instagram.webp",
+      "source": "https://www.instagram.com/vahidparsa10/",
+      "width": 1265,
+      "height": 712
+    }
+  ],
+  "plugin": {
+    "name": "AutoLink – Internal Linking by Smartify Tech",
+    "status": "submitted for review; not yet published",
+    "source": "User-provided WordPress submission confirmation; 2026-11-06",
+    "profile": "https://profiles.wordpress.org/vahidparsa/"
+  }
+}
