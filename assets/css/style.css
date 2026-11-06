@@ -149,3 +149,11 @@ body .site-shell .community-update{font-size:14px}
 @media(max-width:1100px){.header-inner nav{gap:13px}.header-inner{gap:12px}.brand{font-size:21px}.hero-composition{grid-template-columns:1fr 1.3fr .75fr}}
 @media(max-width:900px){.hero-composition{grid-template-columns:1fr 1.4fr}.hero-experience{display:none}.hero-intro{padding-bottom:10px}.hero-portrait,.hero-portrait img{height:365px}.header-inner nav{font-size:16px}}
 @media(max-width:620px){.header-contact{display:none}.header-inner{padding:12px 17px}.hero-composition{grid-template-columns:1fr;gap:18px;margin-top:24px}.hero-intro{max-width:480px;margin:auto;text-align:center;order:0;padding:0}.hero-portrait{order:1;height:350px}.hero-portrait img{height:350px;width:285px}.hero-actions{bottom:14px}.hero-actions .button{padding:10px 13px}.about-description{width:100%}.stats-strip{gap:22px 12px;padding:24px 14px}.stats-strip>div>span,.stats-strip>a>span{font-size:14px;text-align:center}.heading-row{gap:24px}.article-byline{gap:14px;flex-wrap:wrap}.article-copy{min-height:44px}.article-featured-image{margin-top:26px;border-radius:15px}.journal-featured>.journal-cover{min-height:0}.journal-featured .journal-featured-image{width:100%;height:auto}.article-header h1{font-size:29px}.article-toc nav{gap:14px}.telegram-support-copy>strong{font-size:14px}.telegram-support-copy>bdi{font-size:12px}body .site-shell .article-header>p{font-size:16px}.footer-bottom{align-items:flex-start}}
+
+/* Light article callouts need their own palette, independent of dark prose. */
+.ai-guide .article-prose .article-exercise{background:#d8edc4;color:#1f3612}
+.ai-guide .article-prose .article-exercise :is(h2,h3,strong){color:#1f3612}
+.ai-guide .article-prose .article-exercise :is(p,li){color:#344b25}
+.ai-guide .article-prose .article-exercise li::marker{color:#476b29}
+.ai-guide .article-prose .article-exercise a:not(.button){color:#274f10;text-decoration-color:#476b29}
+.ai-guide .article-prose .article-exercise .eyebrow{color:#476b29}
