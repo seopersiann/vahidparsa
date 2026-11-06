@@ -1,0 +1,51 @@
+{
+  "reviewedAt": "2026-11-06",
+  "basis": "Editorial comparison of official documentation; no original benchmark or hands-on product testing claimed.",
+  "screenshots": "Actual public product pages captured in browser; cookie notices dismissed. No signed-in dashboards.",
+  "tools": [
+    {
+      "name": "Codex",
+      "url": "https://openai.com/codex/",
+      "documentation": "https://learn.chatgpt.com/docs/codex/ide",
+      "image": "assets/images/articles/ai-coding/codex.webp",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "name": "Claude Code",
+      "url": "https://claude.com/product/claude-code",
+      "documentation": "https://code.claude.com/docs/en/overview",
+      "image": "assets/images/articles/ai-coding/claude-code.webp",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "name": "Cursor",
+      "url": "https://cursor.com/",
+      "documentation": "https://cursor.com/docs",
+      "image": "assets/images/articles/ai-coding/cursor.webp",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "name": "GitHub Copilot",
+      "url": "https://github.com/features/copilot",
+      "documentation": "https://docs.github.com/en/copilot/concepts/copilot-surfaces/copilot-in-ides",
+      "image": "assets/images/articles/ai-coding/copilot.webp",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "name": "Replit Agent",
+      "url": "https://replit.com/products/agent",
+      "documentation": "https://docs.replit.com/features/agent/overview",
+      "image": "assets/images/articles/ai-coding/replit.webp",
+      "width": 1280,
+      "height": 720
+    }
+  ],
+  "featuredImage": {
+    "path": "assets/images/articles/ai-coding/featured.webp",
+    "type": "AI-generated editorial illustration, distinct from product screenshots."
+  }
+}

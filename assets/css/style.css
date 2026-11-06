@@ -182,3 +182,11 @@ body .site-shell .policy-date{font-size:14px;color:#a7b69a;margin-top:20px}
 .policy-contact .text-link{margin-top:12px}
 @media(max-width:1000px){.footer-top{gap:30px;grid-template-columns:minmax(0,1.2fr) minmax(260px,1fr)}.footer-grid{grid-template-columns:1fr 1fr;gap:30px}.policy-page{grid-template-columns:minmax(0,1fr) 260px;gap:30px}}
 @media(max-width:700px){.footer-top{grid-template-columns:1fr;gap:28px}.footer-contact{padding:20px}.footer-grid{gap:27px 20px}.footer-grid .footer-social-icons{grid-template-columns:repeat(2,44px)}.policy-page{grid-template-columns:1fr;gap:15px;margin-bottom:50px}.policy-contact{position:static}.policy-prose h2{font-size:23px}.policy-intro h1{font-size:32px}}
+
+/* Practical coding guide: keep examples readable in the RTL article flow. */
+.coding-prompt{margin:24px 0;padding:23px 26px;background:#182310;border:1px solid #3c502c;border-inline-start:4px solid var(--green);border-radius:15px}
+.coding-prompt p{margin:0;color:#dce7d2}
+.tool-source-links{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center}
+.journal-single{row-gap:28px}
+@media(max-width:700px){.coding-prompt{padding:20px}.coding-guide .article-toc nav{grid-template-columns:1fr 1fr}.coding-guide .article-toc nav a{overflow-wrap:anywhere}}
+@media(min-width:901px){.coding-guide .article-toc{max-height:calc(100dvh - 150px);overflow-y:auto;scrollbar-width:thin}}
