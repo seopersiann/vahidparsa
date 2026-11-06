@@ -61,3 +61,6 @@
 @media(max-width:900px){.about-profiles{grid-template-columns:1fr;gap:9px}.about-profile-link{padding:12px;gap:11px}.profile-copy>strong{font-size:11px}.profile-copy>bdi{font-size:9px}.profile-icon{width:34px;height:34px}.profile-arrow{font-size:16px}}
 @media(max-width:620px){.about-profile-block{margin-top:20px;padding-top:17px}.about-profiles-label{font-size:10px;margin-bottom:11px}.about-profiles{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.about-profile-link{padding:13px 10px;gap:8px}.profile-icon{width:29px;height:31px}.profile-icon .icon{width:20px;height:20px}.profile-copy>strong{font-size:9px;line-height:1.9}.profile-copy>bdi{font-size:8px}.profile-arrow{font-size:13px}.footer-identity .footer-description{font-size:11px;line-height:2.25;margin-top:15px}.footer-grid .footer-social-icons{gap:10px}.footer-grid .footer-social-icons>a{width:44px;height:44px;border-radius:12px}}
 @media(max-width:360px){.about-profiles{grid-template-columns:1fr}.about-profile-link{padding:12px;gap:12px}.profile-icon{width:34px;height:34px}.profile-icon .icon{width:22px;height:22px}.profile-copy>strong{font-size:11px}.profile-copy>bdi{font-size:9px}.profile-arrow{font-size:16px}}
+
+/* An odd final professional profile spans the row for a balanced three-link layout. */
+.about-profiles>.about-profile-link:last-child:nth-child(odd){grid-column:1/-1}

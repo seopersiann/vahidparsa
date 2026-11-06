@@ -1,4 +1,3 @@
+# Pre-launch: allow fetching so crawlers can read the noindex meta rule.
 User-agent: *
 Allow: /
-
-Sitemap: https://vahidparsa.com/sitemap.xml
