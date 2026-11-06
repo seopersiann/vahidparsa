@@ -21,10 +21,20 @@
       "height": 712
     },
     {
-      "file": "assets/images/about/instagram.webp",
+      "file": "assets/images/about/instagram-mobile.webp",
       "source": "https://www.instagram.com/vahidparsa10/",
-      "width": 1265,
-      "height": 712
+      "width": 375,
+      "height": 812,
+      "viewport": "mobile 390 × 844",
+      "capturedAt": "2026-11-06"
+    },
+    {
+      "file": "assets/images/about/linkedin.webp",
+      "source": "https://www.linkedin.com/in/vahidparsaa/",
+      "width": 794,
+      "height": 468,
+      "crop": "Public profile introduction card only; private dashboard and navigation excluded",
+      "capturedAt": "2026-11-06"
     }
   ],
   "plugin": {
