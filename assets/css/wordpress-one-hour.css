@@ -1,0 +1,109 @@
+.wp-hour-video {
+  margin: 28px 0 0;
+  overflow: hidden;
+  border: 1px solid #425a32;
+  border-radius: 20px;
+  background: #171f12;
+}
+
+.wp-hour-video a {
+  position: relative;
+  display: block;
+}
+
+.wp-hour-video img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.wp-hour-play {
+  position: absolute;
+  inset: 50% auto auto 50%;
+  display: grid;
+  place-items: center;
+  width: clamp(42px, 7vw, 68px);
+  aspect-ratio: 1;
+  border: 2px solid #cfff9d;
+  border-radius: 50%;
+  background: #15210fe8;
+  color: #caff96;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 0 6px #12181190;
+}
+
+.wp-hour-video a:hover .wp-hour-play {
+  background: #a8f65a;
+  color: #131c0e;
+}
+
+.wp-hour-video figcaption {
+  padding: 14px 18px;
+  color: #d8e4ce;
+}
+
+.wp-hour-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.wp-hour-figure {
+  margin: 22px 0;
+}
+
+.wp-hour-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid #425a32;
+  border-radius: 12px;
+  background: #f5f7f3;
+}
+
+.wp-hour-figure.theme-preview img { max-width: 420px; }
+
+.wp-hour-figure figcaption {
+  margin-top: 9px;
+  color: #bbcab2;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.wp-hour .wp-coupon-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin: 18px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.wp-hour .wp-coupon-list li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin: 0;
+  padding: 11px;
+  border: 1px solid #425a32;
+  border-radius: 10px;
+  background: #192315;
+}
+
+.wp-hour .wp-coupon-list code {
+  font-size: clamp(15px, 3vw, 19px);
+  letter-spacing: .04em;
+  color: #c9f9a5;
+  user-select: all;
+}
+
+.wp-hour .wp-coupon-list [hidden] { display: none; }
+.wp-hour .wp-coupon-status { color: #c9f9a5; }
+
+@media (max-width: 520px) {
+  .wp-hour .wp-coupon-list { grid-template-columns: minmax(0, 1fr); }
+  .wp-hour-video { border-radius: 12px; }
+}
