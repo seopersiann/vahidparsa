@@ -6,12 +6,12 @@
 <meta name="theme-color" content="#a8f65a">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <title>آموزش وایب کدینگ؛ ساخت اولین سایت با هوش مصنوعی | وحید پارسا</title>
-<meta name="description" content="وایب کدینگ را به فارسی و با یک پروژهٔ عملی یاد بگیر؛ ساخت سایت نمونه‌کار، سه پرامپت آماده، فایل HTML قابل دانلود، تست موبایل و انتشار با GitHub Pages.">
+<meta name="description" content="آموزش عملی وایب کدینگ به فارسی با ساخت سایت نمونه‌کار، فایل HTML قابل دانلود، پرامپت‌های آماده، رفع خطاهای موبایل و انتشار با GitHub Pages.">
 <link rel="canonical" href="https://vahidparsa.com/articles/vibe-coding/">
 <meta property="og:type" content="article">
 <meta property="og:locale" content="fa_IR">
 <meta property="og:title" content="آموزش وایب کدینگ؛ ساخت اولین سایت با هوش مصنوعی">
-<meta property="og:description" content="وایب کدینگ را به فارسی و با یک پروژهٔ عملی یاد بگیر؛ ساخت سایت نمونه‌کار، سه پرامپت آماده، فایل HTML قابل دانلود، تست موبایل و انتشار با GitHub Pages.">
+<meta property="og:description" content="آموزش عملی وایب کدینگ به فارسی با ساخت سایت نمونه‌کار، فایل HTML قابل دانلود، پرامپت‌های آماده، رفع خطاهای موبایل و انتشار با GitHub Pages.">
 <meta property="og:url" content="https://vahidparsa.com/articles/vibe-coding/">
 <meta property="og:image" content="https://vahidparsa.com/assets/images/articles/vibe-coding/portfolio-preview.webp">
 <meta property="og:image:width" content="1200">
@@ -19,11 +19,11 @@
 <meta property="og:image:alt" content="پیش‌نمایش پروژهٔ تمرینی سایت نمونه‌کار فارسی در آموزش وایب کدینگ">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="آموزش وایب کدینگ؛ ساخت اولین سایت با هوش مصنوعی">
-<meta name="twitter:description" content="وایب کدینگ را به فارسی و با یک پروژهٔ عملی یاد بگیر؛ ساخت سایت نمونه‌کار، سه پرامپت آماده، فایل HTML قابل دانلود، تست موبایل و انتشار با GitHub Pages.">
+<meta name="twitter:description" content="آموزش عملی وایب کدینگ به فارسی با ساخت سایت نمونه‌کار، فایل HTML قابل دانلود، پرامپت‌های آماده، رفع خطاهای موبایل و انتشار با GitHub Pages.">
 <meta name="twitter:image" content="https://vahidparsa.com/assets/images/articles/vibe-coding/portfolio-preview.webp">
 <meta name="twitter:image:alt" content="پیش‌نمایش پروژهٔ تمرینی سایت نمونه‌کار فارسی در آموزش وایب کدینگ">
 <link rel="icon" type="image/svg+xml" href="../../assets/images/favicon.svg?v=vp1"><link rel="preload" href="../../assets/fonts/Vazirmatn.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="../../assets/css/style.css?v=a838ccfc0023"><script src="../../assets/js/main.js" defer></script>
-<link rel="stylesheet" href="../../assets/css/vibe-coding.css?v=ccb66166c2c2">
+<link rel="stylesheet" href="../../assets/css/vibe-coding.css?v=db4dabfed941">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -33,7 +33,7 @@
       "@id": "https://vahidparsa.com/articles/vibe-coding/#article",
       "url": "https://vahidparsa.com/articles/vibe-coding/",
       "headline": "آموزش وایب کدینگ؛ ساخت اولین سایت با هوش مصنوعی",
-      "description": "وایب کدینگ را به فارسی و با یک پروژهٔ عملی یاد بگیر؛ ساخت سایت نمونه‌کار، سه پرامپت آماده، فایل HTML قابل دانلود، تست موبایل و انتشار با GitHub Pages.",
+      "description": "آموزش عملی وایب کدینگ به فارسی با ساخت سایت نمونه‌کار، فایل HTML قابل دانلود، پرامپت‌های آماده، رفع خطاهای موبایل و انتشار با GitHub Pages.",
       "inLanguage": "fa-IR",
       "datePublished": "2026-11-17",
       "dateModified": "2026-11-17",
@@ -151,7 +151,9 @@
         <a href="#what">وایب کدینگ چیست؟</a>
         <a href="#project">پروژه و فایل نمونه</a>
         <a href="#prompts">پرامپت‌های تمرین</a>
+        <a href="#iteration">مثال اصلاح کد</a>
         <a href="#test">چک‌لیست تست</a>
+        <a href="#troubleshooting">رفع خطاهای رایج</a>
         <a href="#publish">انتشار پروژه</a>
         <a href="#video">ویدیوی آموزش</a>
         <a href="#faq">سؤال‌های رایج</a>
@@ -162,6 +164,18 @@
   <h2>وایب کدینگ چیست و با چه ابزاری شروع کنیم؟</h2>
   <p>در وایب کدینگ، نتیجه‌ای را که می‌خواهی با زبان طبیعی توضیح می‌دهی و از هوش مصنوعی می‌خواهی کد اولیه را بسازد یا تغییر بدهد. بعد نسخهٔ قابل اجرا را باز می‌کنی، چیزی را که مطابق نیازت کار نمی‌کند مشخص می‌کنی و درخواست بعدی را دقیق‌تر می‌نویسی. برای اولین پروژه همین چرخهٔ «درخواست، پیش‌نمایش، بازبینی و اصلاح» کافی است.</p>
   <p>اگر ابزارت فقط متن و کد برمی‌گرداند، فایل خروجی را ذخیره کن و در مرورگر بازش کن. اگر دستیار به پوشهٔ پروژه دسترسی دارد، یک پوشهٔ جدید و خالی برای تمرین بساز و محدودهٔ تغییر را به همان فایل مشخص محدود کن. اگر بین ابزارها مرددی، <a href="../best-ai-for-coding/">مقایسهٔ دستیارهای کدنویسی با هوش مصنوعی</a> کمک می‌کند انتخابت را بر اساس نوع کار انجام بدهی.</p>
+  <div class="article-comparison" role="region" aria-label="مقایسهٔ راه‌های شروع وایب کدینگ" tabindex="0">
+    <table>
+      <caption>برای پروژهٔ اول کدام شیوه مناسب‌تر است؟</caption>
+      <thead><tr><th scope="col">شیوه</th><th scope="col">چه زمانی انتخابش کنی؟</th><th scope="col">چه چیزی باید دست خودت باشد؟</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">گفت‌وگو و دریافت کد</th><td>وقتی فقط یک صفحه یا یک قطعه کد می‌خواهی.</td><td>ذخیرهٔ فایل، اجرا و پیگیری نسخه‌ها.</td></tr>
+        <tr><th scope="row">دستیار داخل ویرایشگر</th><td>وقتی پروژه چند فایل دارد و می‌خواهی تغییرها را کنار کد ببینی.</td><td>پذیرفتن تغییرهای هر فایل و اجرای تست.</td></tr>
+        <tr><th scope="row">محیط تحت وب با پیش‌نمایش</th><td>وقتی می‌خواهی سریع یک نمونهٔ قابل اجرا برای دیگران آماده کنی.</td><td>محدودهٔ دسترسی، خروجی پروژه و روش انتشار.</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>برای همین تمرین، دریافت کد و باز کردن یک فایل در مرورگر کافی است. اگر هنوز مطمئن نیستی پروژه‌ات به کد یا به یک سایت‌ساز نیاز دارد، اول <a href="../build-website-with-ai/#methods">مقایسهٔ روش‌های ساخت سایت با هوش مصنوعی</a> را بخوان.</p>
 </section>
 
 <section id="project">
@@ -178,17 +192,20 @@
   </figure>
   <div class="vibe-download">
     <h3>فایل آمادهٔ تمرین</h3>
-    <p>پیش‌نمایش و فایل دانلودی یکسان‌اند. فایل دانلودشده را به <bdi lang="en">index.html</bdi> تغییر نام بده و بخش معرفی، پروژه‌ها و تماس را با اطلاعات خودت کامل کن.</p>
+    <p>پیش‌نمایش و فایل دانلودی یکسان‌اند. اگر مرورگر فایل را با نام دیگری ذخیره کرد، نام آن را به <bdi lang="en">index.html</bdi> تغییر بده و بخش معرفی، پروژه‌ها و تماس را با اطلاعات خودت کامل کن.</p>
     <div class="vibe-actions">
       <a class="button primary" href="../../assets/examples/vibe-coding/portfolio.html" download="index.html">دانلود فایل HTML</a>
       <a class="button outline" href="../../assets/examples/vibe-coding/portfolio.html">باز کردن پیش‌نمایش</a>
     </div>
   </div>
+  <h3>از کدام بخش‌های فایل شروع به ویرایش کنیم؟</h3>
+  <p>در <code dir="ltr">&lt;head&gt;</code> عنوان تب و تنظیم نمایش موبایل را می‌بینی. در <code dir="ltr">&lt;style&gt;</code> رنگ‌ها و چیدمان قرار دارند. در <code dir="ltr">&lt;main&gt;</code> معرفی، کارت‌های نمونه‌کار و بخش تماس را پیدا می‌کنی. ابتدا فقط متن عنوان و یک کارت را عوض کن، ذخیره کن و صفحه را دوباره باز کن. بعد رنگ یا فاصله‌ها را تغییر بده تا اثر هر تغییر را جداگانه ببینی.</p>
+  <p>برای اضافه کردن سومین پروژه، یکی از تگ‌های <code dir="ltr">&lt;article&gt;</code> داخل <code dir="ltr">.cards</code> را کپی و عنوان و توضیحش را جایگزین کن. اگر اطلاعات تماس را وارد می‌کنی، یک راه ارتباطی عمومی انتخاب کن. رمز، توکن و اطلاعات خصوصی در فایل HTML قرار نمی‌گیرند؛ هر بازدیدکننده می‌تواند سورس آن را ببیند.</p>
 </section>
 
 <section id="prompts">
   <h2>سه پرامپت برای ساخت، رفع خطا و بازبینی</h2>
-  <p>پرامپت‌ها را مرحله‌به‌مرحله اجرا کن. نسخهٔ سالم هر مرحله را نگه‌دار تا اگر تغییر بعدی مشکلی ایجاد کرد، بتوانی به آن برگردی.</p>
+  <p>پرامپت‌ها را مرحله‌به‌مرحله اجرا کن. نسخهٔ سالم هر مرحله را نگه‌دار تا اگر تغییر بعدی مشکلی ایجاد کرد، بتوانی به آن برگردی. برای دیدن نتیجهٔ یک اصلاح مشخص، بخش <a href="#iteration">مثال عملی رفع خطای موبایل</a> را هم ببین.</p>
 
   <h3>۱. ساخت نسخهٔ اول</h3>
   <blockquote class="vibe-prompt">
@@ -207,6 +224,42 @@
   <p>اگر ابزار گفت «تست شد»، گزارشش را بخوان. برای این پروژه، معیار پایان کار باز شدن صفحه، درست بودن لینک‌ها و خوانایی در موبایل است. نتیجه را خودت هم در مرورگر ببین.</p>
 </section>
 
+<section id="iteration">
+  <h2>مثال عملی: وقتی کارت‌ها در موبایل از کادر بیرون می‌زنند</h2>
+  <p>فرض کن خروجی اول خوب به نظر می‌رسد، اما در عرض ۳۶۰ پیکسل، کارت دوم نصفه دیده می‌شود. اول مشکل را بازتولید کن. ابزار توسعه‌دهندهٔ مرورگر را باز کن، نمایش دستگاه را فعال کن و عرض را روی ۳۶۰ بگذار. بعد به دستیار بگو چه دیدی، انتظار چه رفتاری داشتی و کدام بخش اجازهٔ تغییر دارد.</p>
+  <blockquote class="vibe-prompt">
+    <p>در عرض ۳۶۰ پیکسل، بخش نمونه‌کارها باعث اسکرول افقی می‌شود. انتظار دارم کارت‌ها روی گوشی زیر هم قرار بگیرند و روی دسکتاپ کنار هم بمانند. کد فعلی .cards را بررسی کن، فقط تغییر مربوط به همین چیدمان را نشان بده و توضیح بده چطور آن را در عرض‌های ۳۶۰ و ۱۲۸۰ پیکسل تست کنم.</p>
+  </blockquote>
+  <p>یک علت رایج، دو ستون با حداقل عرض ثابت است. در فایل نمونه از شبکه‌ای استفاده شده که به اندازهٔ فضای موجود ستون می‌سازد. اگر عرض ظرف از ۲۵۰ پیکسل کمتر شود، حداقل عرض ستون هم تا اندازهٔ ظرف کوچک می‌شود.</p>
+  <div class="vibe-code-pair">
+    <figure>
+      <figcaption>نمونهٔ مشکل‌دار: دو ستون اجباری</figcaption>
+      <pre dir="ltr" tabindex="0"><code>.cards {
+  display: grid;
+  grid-template-columns:
+    repeat(2, minmax(250px, 1fr));
+  gap: 1rem;
+}</code></pre>
+    </figure>
+    <figure>
+      <figcaption>راه‌حل فایل نمونه: تعداد ستون متناسب با فضا</figcaption>
+      <pre dir="ltr" tabindex="0"><code>.cards {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(min(100%, 250px), 1fr)
+  );
+  gap: 1rem;
+}</code></pre>
+    </figure>
+  </div>
+  <p>بعد از اصلاح، فقط به ناپدید شدن اسکرول اکتفا نکن. نگاه کن متن کامل کارت خوانده شود، فاصلهٔ بین کارت‌ها بماند و چیدمان دسکتاپ هنوز درست باشد. <a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Responsive_Design">راهنمای طراحی واکنش‌گرا در MDN</a> مفهوم چیدمان متناسب با عرض صفحه را با مثال توضیح می‌دهد.</p>
+  <figure class="vibe-mobile-demo">
+    <img src="../../assets/images/articles/vibe-coding/portfolio-mobile.webp" width="390" height="950" loading="lazy" decoding="async" alt="اسکرین‌شات واقعی نمونه‌کار فارسی روی موبایل؛ دو کارت پروژه در یک ستون قرار گرفته‌اند">
+    <figcaption><strong>نتیجه در عرض ۳۹۰ پیکسل</strong><br>این تصویر از اجرای همان فایل قابل دانلود است. هر دو کارت به‌ترتیب و در یک ستون دیده می‌شوند. خودت هم پیش‌نمایش را باز کن و عرض مرورگر را تغییر بده.</figcaption>
+  </figure>
+</section>
+
 <section id="test">
   <h2>چک‌لیست تست پروژه</h2>
   <ul>
@@ -217,6 +270,23 @@
   </ul>
 </section>
 
+<section id="troubleshooting">
+  <h2>رفع خطاهای رایج بعد از تولید کد</h2>
+  <div class="article-comparison" role="region" aria-label="جدول عیب‌یابی پروژهٔ وایب کدینگ" tabindex="0">
+    <table>
+      <caption>از نشانهٔ مشکل به اولین بررسی برس</caption>
+      <thead><tr><th scope="col">نشانه</th><th scope="col">اول چه چیزی را بررسی کنی؟</th><th scope="col">از کجا بفهمی رفع شده؟</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">مرورگر خودِ کد را نشان می‌دهد</th><td>نام کامل فایل را بررسی کن. باید <bdi lang="en">index.html</bdi> باشد. علامت‌های سه بک‌تیک ابتدا و انتهای پاسخ را از فایل بردار.</td><td>با باز کردن فایل، عنوان و دکمه‌های صفحه نمایش داده می‌شوند.</td></tr>
+        <tr><th scope="row">دکمهٔ تماس کاری نمی‌کند</th><td>مقدار <code dir="ltr">href="#contact"</code> را با <code dir="ltr">id="contact"</code> تطبیق بده. هر شناسه باید یک بار در صفحه استفاده شود.</td><td>دکمه با کلیک و با کلید Enter به بخش تماس می‌رسد.</td></tr>
+        <tr><th scope="row">تصویر فقط روی کامپیوتر خودت باز می‌شود</th><td>اگر عکس اضافه کرده‌ای، مسیر داخلی کامپیوتر را به مسیر نسبی مثل <bdi lang="en">images/photo.webp</bdi> تبدیل کن. خود فایل و املای دقیق نامش را هم بررسی کن.</td><td>تصویر با نشانی عمومی سایت و در یک مرورگر دیگر باز می‌شود.</td></tr>
+        <tr><th scope="row">پیش‌نمایش سالم است، اما لینک آنلاین ۴۰۴ می‌دهد</th><td>شاخه و پوشهٔ منبع انتشار را بررسی کن. فایل ورودی با حروف کوچک در همان پوشه باشد.</td><td>نشانی عمومی که میزبان داده، صفحهٔ پروژه را باز می‌کند.</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>وقتی ایرادی پیدا شد، عرض مرورگر، مراحل تکرار خطا و متن پیام را یادداشت کن. اگر درخواستی نتیجه را خراب کرد، به فایل سالم یا کامیت قبلی برگرد و همان یک مشکل را با اطلاعات دقیق‌تر مطرح کن.</p>
+</section>
+
 <section id="publish">
   <h2>انتشار پروژه با GitHub Pages یا هاست</h2>
   <h3>مسیر اول: GitHub Pages</h3>
@@ -225,6 +295,8 @@
     <li>از تنظیمات مخزن وارد <bdi lang="en">Pages</bdi> شو. گزینهٔ انتشار از شاخه <bdi lang="en">(Deploy from a branch)</bdi> را انتخاب کن و منبع را روی <bdi lang="en">main / (root)</bdi> بگذار. <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site">راهنمای رسمی تنظیم منبع انتشار</a> جزئیات این مرحله را دارد.</li>
     <li>بعد از نمایش نشانی عمومی در تنظیمات <bdi lang="en">Pages</bdi>، آن را در مرورگر باز کن و مسیر نمونه‌کار و تماس را دوباره تست کن.</li>
   </ol>
+
+  <p>اگر انتشار موفق بود ولی صفحه باز نشد، نشانی را از تنظیمات همان مخزن بردار و محل و نام فایل ورودی را دوباره بررسی کن. <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/troubleshooting-404-errors-for-github-pages-sites">راهنمای رفع خطای ۴۰۴ در GitHub Pages</a> موارد دیگر را توضیح می‌دهد.</p>
 
   <h3>مسیر دوم: هاستی که از قبل داری</h3>
   <p>برای آزمایش، فایل را در پوشهٔ جدیدی زیر مسیر عمومی هاست قرار بده و نشانی همان پوشه را باز کن. اگر می‌خواهی سایت اصلی را جایگزین کنی، ابتدا از فایل‌های فعلی نسخهٔ پشتیبان بگیر، سپس نسخهٔ جایگزین را از طریق نشانی دامنه و <bdi lang="en">HTTPS</bdi> بررسی کن. برای مراحل عمومی انتشار فایل‌ها، <a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Your_first_website/Publishing_your_website">راهنمای انتشار سایت MDN</a> را ببین.</p>
@@ -249,6 +321,10 @@
   <p>برای ساخت این صفحه لازم نیست از قبل برنامه‌نویس باشی. آشنایی با بخش‌های اصلی یک فایل HTML و خواندن پیام خطا کمک می‌کند تغییرات را بفهمی و ایرادها را دقیق‌تر توضیح بدهی.</p>
   <h3>آیا همین روش برای فروشگاه یا سیستم ورود کافی است؟</h3>
   <p>این پروژه برای معرفی و نمونه‌کار است. امکاناتی مثل پرداخت، حساب کاربری یا ذخیرهٔ اطلاعات به زیرساخت و بررسی جداگانه نیاز دارند. ابتدا همان مسیر ساده را تا انتشار انجام بده، سپس هر قابلیت را جدا طراحی و آزمایش کن.</p>
+  <h3>فرق وایب کدینگ با سایت‌ساز بدون کد چیست؟</h3>
+  <p>در این تمرین خروجی یک فایل HTML است که می‌توانی ویرایشش کنی یا روی هاست دیگری منتشر کنی. در سایت‌ساز معمولاً با ویرایشگر خود پلتفرم کار می‌کنی. اگر نگهداری کد برایت مهم نیست، سایت‌ساز می‌تواند مسیر ساده‌تری باشد. اگر می‌خواهی منطق چیدمان را یاد بگیری یا فایل‌ها را به‌راحتی جابه‌جا کنی، از تمرین کد شروع کن.</p>
+  <h3>آیا اگر بیشتر کد را هوش مصنوعی نوشته، باز هم باید آن را بازبینی کنم؟</h3>
+  <p>بله. کد ممکن است مسیر تماس اشتباه، متن ساختگی یا پیوند ناقص داشته باشد. بعد از هر تغییر بپرس چه چیزی عوض شده و همان بخش را در مرورگر امتحان کن. برای پروژه‌هایی که دادهٔ کاربر یا پرداخت دارند، بازبینی امنیت و رفتار سمت سرور هم لازم است.</p>
 </section>
 
     </div>
