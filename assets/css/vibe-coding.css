@@ -114,6 +114,10 @@
   margin: 22px 0;
 }
 
+.vibe-code-pair.vibe-code-single {
+  grid-template-columns: minmax(0, 1fr);
+}
+
 .vibe-code-pair figure {
   min-width: 0;
   margin: 0;
