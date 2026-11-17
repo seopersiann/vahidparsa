@@ -1,0 +1,108 @@
+.vibe-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
+  align-items: center;
+  gap: clamp(22px, 5vw, 60px);
+  margin: 30px 0 0;
+  padding: clamp(22px, 5vw, 52px);
+  border: 1px solid #354b28;
+  border-radius: 24px;
+  background: radial-gradient(ellipse at 0 0, #2a421c 0, transparent 60%), #131b10;
+}
+
+.vibe-hero h1 {
+  margin: 8px 0 16px;
+  font-size: clamp(30px, 5vw, 57px);
+  line-height: 1.4;
+}
+
+.vibe-hero h1 span {
+  display: block;
+  color: var(--green);
+}
+
+.vibe-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.vibe-panel {
+  padding: clamp(17px, 3vw, 26px);
+  border: 1px solid #53723b;
+  border-radius: 16px;
+  background: #11180dee;
+}
+
+.vibe-panel h2 {
+  font-size: clamp(19px, 3vw, 24px);
+  margin: 0 0 12px;
+}
+
+.vibe-panel dl {
+  display: grid;
+  gap: 0;
+  margin: 0;
+}
+
+.vibe-panel dl div {
+  display: grid;
+  grid-template-columns: minmax(75px, .65fr) 1fr;
+  gap: 10px;
+  padding: 10px 0;
+  border-top: 1px solid #35452b;
+}
+
+.vibe-panel dt { font-weight: 700; }
+.vibe-panel dd { margin: 0; color: #c7d4bc; }
+
+.vibe-guide .vibe-download,
+.vibe-guide .vibe-prompt {
+  padding: clamp(14px, 3vw, 23px);
+  margin: 20px 0;
+  border: 1px solid #415334;
+  border-radius: 14px;
+  background: #172013;
+}
+
+.vibe-guide .vibe-prompt {
+  border-inline-start: 3px solid var(--green);
+}
+
+.vibe-guide .vibe-prompt p {
+  margin: 0;
+  color: #e6efdf;
+}
+
+.vibe-guide .vibe-download h3 {
+  margin-top: 0;
+}
+
+.vibe-video {
+  margin: 22px 0 16px;
+}
+
+.vibe-video a {
+  display: block;
+  max-width: 560px;
+}
+
+.vibe-video img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid #415334;
+  border-radius: 14px;
+}
+
+.vibe-video figcaption { margin-top: 10px; color: #c7d4bc; }
+
+@media (max-width: 740px) {
+  .vibe-hero { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 420px) {
+  .vibe-hero { margin-top: 18px; padding: 18px; }
+  .vibe-hero .vibe-actions > a { justify-content: center; width: 100%; }
+}

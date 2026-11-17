@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <meta name="description" content="نمونهٔ تمرینی یک سایت شخصی فارسی برای یادگیری وایب کدینگ.">
+  <title>نمونه‌کار یک طراح مستقل • پروژهٔ تمرینی</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #1f261b;
+      --muted: #4e5849;
+      --surface: #f7f7ef;
+      --line: #d7decd;
+      --accent: #def3b8;
+      --forest: #294523;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-padding-top: 1rem; }
+    body {
+      margin: 0;
+      background: var(--surface);
+      color: var(--ink);
+      font: 1rem/1.9 Tahoma, Arial, sans-serif;
+    }
+
+    a { color: var(--forest); }
+    a:focus-visible { outline: 3px solid #41651b; outline-offset: 4px; }
+    .wrap { width: min(100% - 2rem, 880px); margin-inline: auto; }
+    .skip { position: absolute; inset: .5rem .5rem auto auto; transform: translateY(-200%); }
+    .skip:focus { transform: none; background: white; padding: .6rem; }
+    .top, nav { display: flex; align-items: center; flex-wrap: wrap; gap: 1rem; }
+    .top { justify-content: space-between; padding-block: 1rem; border-bottom: 1px solid var(--line); }
+    nav a { display: inline-flex; align-items: center; min-height: 44px; }
+    .hero { padding: clamp(2.5rem, 6vw, 4.6rem) 0 2.7rem; }
+    .tag { background: var(--accent); padding: .25rem .75rem; border-radius: 99px; }
+    h1 { font-size: clamp(1.8rem, 5.6vw, 3.5rem); line-height: 1.4; margin: 1rem 0; max-width: 20ch; }
+    p { color: var(--muted); }
+    .hero p { max-width: 52ch; }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      min-height: 44px;
+      padding: .5rem 1rem;
+      border-radius: .7rem;
+      background: var(--forest);
+      color: white;
+      text-decoration: none;
+    }
+
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr)); gap: 1rem; }
+    article, .contact { padding: 1.25rem; border: 1px solid var(--line); border-radius: 1rem; }
+    article { background: #fff; }
+    article span { color: var(--forest); }
+    h2, h3 { line-height: 1.5; }
+    .contact { background: #edf2e2; margin: 3rem 0; }
+    .contact p { overflow-wrap: anywhere; }
+    footer { padding: 1.2rem 0 1.6rem; border-top: 1px solid var(--line); }
+  </style>
+</head>
+<body id="top">
+  <a class="skip" href="#main">رفتن به محتوا</a>
+  <header class="wrap top">
+    <!-- این نام آزمایشی را با نام خودتان عوض کنید. -->
+    <strong>نمونه‌کار یک طراح مستقل</strong>
+    <nav aria-label="منوی اصلی">
+      <a href="#projects">نمونه‌کارها</a>
+      <a href="#contact">تماس</a>
+    </nav>
+  </header>
+
+  <main class="wrap" id="main">
+    <section class="hero" aria-labelledby="intro">
+      <span class="tag">نمونهٔ آموزشی</span>
+      <h1 id="intro">طراحی سایت برای ایده‌های کوچک و قابل اجرا</h1>
+      <p>این نمونه نشان می‌دهد چگونه می‌توان معرفی کوتاه، دو نمونه‌کار و راه تماس را در یک سایت تک‌صفحه‌ای کنار هم گذاشت.</p>
+      <a class="button" href="#projects">دیدن نمونه‌کارها</a>
+    </section>
+
+    <section id="projects" aria-labelledby="projects-title">
+      <h2 id="projects-title">نمونه‌کارها</h2>
+      <div class="cards">
+        <article>
+          <span>پروژهٔ فرضی اول</span>
+          <h3>صفحهٔ معرفی یک کارگاه</h3>
+          <p>تمرکز طراحی روی معرفی کوتاه، نمایش زمان رویداد و پیدا کردن مسیر ثبت‌نام است.</p>
+        </article>
+        <article>
+          <span>پروژهٔ فرضی دوم</span>
+          <h3>سایت معرفی یک کسب‌وکار محلی</h3>
+          <p>صفحه‌ای ساده برای توضیح خدمات، نمایش نمونه و دسترسی سریع به اطلاعات تماس.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">تماس</h2>
+      <!-- پیش از انتشار، متن نمونه را با راه تماس واقعی و قابل آزمایش جایگزین کنید. -->
+      <p>این پیش‌نمایش آموزشی راه تماس فعال ندارد. در نسخهٔ شخصی، اینجا نشانی ایمیل یا راه ارتباط معتبر خودتان را قرار دهید.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap"><a href="#top">بازگشت به بالا ↑</a></div>
+  </footer>
+</body>
+</html>
